@@ -24,17 +24,35 @@ export function Footer() {
           </p>
         </div>
 
-        <nav aria-label="Footer" className="flex flex-wrap gap-x-8 gap-y-3">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-navy-muted hover:text-navy-foreground text-sm transition-colors"
-            >
-              {l.label}
-            </a>
-          ))}
-        </nav>
+        <div className="flex flex-col gap-6 md:items-end">
+          <div className="flex items-center gap-3">
+            {socials.map(({ label, href, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={label}
+                title={label}
+                className="text-navy-muted hover:text-navy-foreground border-navy-border hover:border-navy-foreground/40 flex h-10 w-10 items-center justify-center rounded-full border transition-colors"
+              >
+                <Icon size={18} strokeWidth={1.8} />
+              </a>
+            ))}
+          </div>
+
+          <nav aria-label="Footer" className="flex flex-wrap gap-x-8 gap-y-3">
+            {links.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="text-navy-muted hover:text-navy-foreground text-sm transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
+          </nav>
+        </div>
       </div>
       <div className="border-navy-border border-t">
         <div className="section-shell text-navy-muted py-6 text-xs">
