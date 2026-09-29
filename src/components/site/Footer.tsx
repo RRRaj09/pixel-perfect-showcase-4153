@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Twitter } from "lucide-react";
+import logo from "@/assets/ravector-logo-white.png.asset.json";
 
 const links = [
   { label: "Solutions", href: "#solutions" },
@@ -18,10 +19,11 @@ export function Footer() {
     <footer className="bg-navy text-navy-foreground border-navy-border border-t">
       <div className="section-shell flex flex-col gap-10 py-14 md:flex-row md:items-start md:justify-between">
         <div>
-          <p className="text-lg font-semibold tracking-[0.2em]">RAVECTOR</p>
-          <p className="text-navy-muted mt-3 text-sm">
-            Cloud. Data. AI. Software Engineering.
-          </p>
+          <img
+            src={logo.url}
+            alt="RAVECTOR — Cloud. Data. AI."
+            className="w-44 md:w-52"
+          />
         </div>
 
         <div className="flex flex-col gap-6 md:items-end">
