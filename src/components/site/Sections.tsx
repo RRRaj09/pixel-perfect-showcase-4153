@@ -3,6 +3,7 @@ import {
   Database,
   Sparkles,
   Code2,
+  Users,
   type LucideIcon,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
@@ -27,6 +28,11 @@ const solutions: { icon: LucideIcon; title: string; body: string }[] = [
     icon: Code2,
     title: "Software Engineering",
     body: "Design and build scalable digital products, platforms and business applications.",
+  },
+  {
+    icon: Users,
+    title: "Staff Augmentation",
+    body: "Extend your team with experienced engineers who plug in quickly and deliver from day one.",
   },
 ];
 
@@ -88,13 +94,13 @@ export function Solutions() {
         <Reveal>
           <span className="eyebrow">Solutions</span>
           <h2 className="mt-5 max-w-2xl text-3xl leading-tight font-semibold tracking-tight sm:text-4xl">
-            Four engineering areas, one delivery standard.
+            Five engineering areas, one delivery standard.
           </h2>
         </Reveal>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {solutions.map((s, i) => (
-            <Reveal key={s.title} delay={i * 80} as="article">
+            <Reveal key={s.title} delay={i * 80} as="article" className={i === solutions.length - 1 ? "sm:col-span-2" : ""}>
               <div className="bg-card group h-full rounded-xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_18px_40px_-24px_color-mix(in_oklab,var(--primary)_55%,transparent)]">
                 <span className="bg-accent text-accent-foreground inline-flex size-11 items-center justify-center rounded-lg transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <s.icon className="size-5" aria-hidden="true" />
