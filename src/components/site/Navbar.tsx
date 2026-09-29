@@ -32,11 +32,8 @@ export function Navbar() {
         aria-label="Primary"
         className="section-shell flex h-16 items-center justify-between md:h-20"
       >
-        <a
-          href="#top"
-          className="text-navy-foreground text-lg font-semibold tracking-[0.2em]"
-        >
-          RAVECTOR
+        <a href="#top" className="flex items-center" aria-label="RAVECTOR home">
+          <img src={logo.url} alt="RAVECTOR" className="h-7 w-auto md:h-8" />
         </a>
 
         <div className="hidden items-center gap-9 md:flex">
