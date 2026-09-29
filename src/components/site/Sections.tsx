@@ -3,6 +3,7 @@ import {
   Database,
   Sparkles,
   Code2,
+  Users,
   type LucideIcon,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
@@ -27,6 +28,11 @@ const solutions: { icon: LucideIcon; title: string; body: string }[] = [
     icon: Code2,
     title: "Software Engineering",
     body: "Design and build scalable digital products, platforms and business applications.",
+  },
+  {
+    icon: Users,
+    title: "Staff Augmentation",
+    body: "Extend your team with experienced engineers who plug in quickly and deliver from day one.",
   },
 ];
 
@@ -88,7 +94,7 @@ export function Solutions() {
         <Reveal>
           <span className="eyebrow">Solutions</span>
           <h2 className="mt-5 max-w-2xl text-3xl leading-tight font-semibold tracking-tight sm:text-4xl">
-            Four engineering areas, one delivery standard.
+            Five engineering areas, one delivery standard.
           </h2>
         </Reveal>
 
