@@ -100,7 +100,7 @@ export function Solutions() {
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {solutions.map((s, i) => (
-            <Reveal key={s.title} delay={i * 80} as="article">
+            <Reveal key={s.title} delay={i * 80} as="article" className={i === solutions.length - 1 ? "sm:col-span-2" : undefined}>
               <div className="bg-card group h-full rounded-xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_18px_40px_-24px_color-mix(in_oklab,var(--primary)_55%,transparent)]">
                 <span className="bg-accent text-accent-foreground inline-flex size-11 items-center justify-center rounded-lg transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <s.icon className="size-5" aria-hidden="true" />
