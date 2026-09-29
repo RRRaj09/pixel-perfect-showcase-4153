@@ -1,8 +1,16 @@
+import { Instagram, Linkedin, Twitter } from "lucide-react";
+
 const links = [
   { label: "Solutions", href: "#solutions" },
   { label: "Capabilities", href: "#capabilities" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
+];
+
+const socials = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/ravector", Icon: Linkedin },
+  { label: "Instagram", href: "https://www.instagram.com/ravector", Icon: Instagram },
+  { label: "Twitter / X", href: "https://x.com/ravector", Icon: Twitter },
 ];
 
 export function Footer() {
