@@ -63,7 +63,6 @@ export function Navbar() {
           onClick={() => setOpen((v) => !v)}
           className="text-navy-foreground md:hidden"
         >
-          {open ? <Menu className="size-6 hidden" /> : null}
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
       </nav>
