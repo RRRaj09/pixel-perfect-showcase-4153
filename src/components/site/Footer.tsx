@@ -8,7 +8,7 @@ const links = [
 ];
 
 const socials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/ravector", Icon: Linkedin },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/ravector/posts/?feedView=all", Icon: Linkedin },
   { label: "Instagram", href: "https://www.instagram.com/ravector", Icon: Instagram },
   { label: "Twitter / X", href: "https://x.com/ravector", Icon: Twitter },
 ];
